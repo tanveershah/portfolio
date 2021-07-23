@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanveer Shah</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="logo">Tanveer Shah</h1>
+        <nav class="nav">
+          <a class="nav-links" href="index.html">HOME</a>
+          <a class="nav-links" href="portfolio.html">PORTFOLIO</a>
+          <a class="nav-links" href="about.html">ABOUT</a>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="para">
+          <h2>A fullstack engineer, teacher and traveller!</h2>
+          <br />
+          <p>A skilled software engineer looking forward to work in a fast-paced
+          organization to utilize technical skills and creative thinking. A
+          professional who has a Growth mindset, believes in collaboration and
+          is self-motivated.</p>
+        </div>
+       
+        <h1 class="qoute">
+          “Logic will get you from A to B. Imagination will take you
+          everywhere.” –Albert Einstein
+        </h1>
+        
+        <img class="home-image" src="./images/homeImage.jpg" alt="" />
+      </main>
+      <footer class="footer">
+        <a href="mailto:info@tanveer.info"
+          ><img src="./images/email.jpg" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/tanveerhshah/"
+          ><img src="./images/linkedin.jpg" alt=""
+        /></a>
+        <a href="https://www.twitter.com/DrTanveerShah/"
+          ><img src="./images/twitter.jpg" alt=""
+        /></a>
+        <a href="https://github.com/tanveershah"
+          ><img src="./images/github.jpg" alt=""
+        /></a>
+      </footer>
+    </div>
+    <script>
+      function styleLink (event) {
+        const linkClicked = $(this)
+        const links = $('.nav-links')
+        links.removeClass('active')
+        linkClicked.addClass('active')
+      }
+
+      $('.nav-links').click(styleLink)
+    </script>
+  </body>
+</html>

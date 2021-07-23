@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*  background-color */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    --hue: 43;
+    --saturation: 33%;
+    --lightness: 81%;
+    --font-hue: 15;
+    --font-saturation: 42%;
+    --font-lightness: 25%;
+}
+
+.container {
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: hsl(var(--hue), var(--saturation), 40%);    
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.logo {
+    font-family: futura;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.nav a:hover {
+    color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items:flex-start;
+    justify-content:left;
+    background-color: hsl(var(--hue), var(--saturation), 78%);
+    height: 91vh;
+    width: 80%;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 4rem;
+    color: hsl(var(--font-hue), var(--font-saturation), var(--font-lightness));
+    padding: 1rem;
+    box-shadow: 3px 3px hsl(var(--hue), var(--saturation), 76%), -1em 0 .4em hsl(var(--hue), var(--saturation), 76%);
+    margin-bottom: 1rem;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+.cards {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 1rem;
+    background-color: hsl(var(--hue), var(--saturation), 55%);
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 7px 5px 5px darkolivegreen;
+    overflow: auto;
+}
+
+.cards h3 {
+    border-bottom:darkgrey solid .1rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+.cards div {
+    margin-top: .5rem;
+}
+
+.cards img {
+    width: 35%;
+    height: auto;
+}
+
+.cards:nth-of-type(even) img {
+    float: left;
+    margin-right: .5rem;
+}
+
+.cards:nth-of-type(odd) img {
+    float: right;
+    margin-left: .5rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(var(--hue), var(--saturation), 40%);
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer a {
+    margin-left: .5rem;
+}
+
+.footer img {
+    height: 2rem;
+}
+
+.active {
+    border-bottom: white solid .1rem;
+}
+
+
+@media only screen and (max-width: 640px){
+    * {
+        font-size: 100%;
+    }
+
+    .main {
+        margin-top: 3rem;
+    }
+
+    .nav-links {
+        color: white;
+        text-decoration: none;
+        margin-left: .2rem;
+        font-size: 100%;
+    }
+}
+
+/* landing page image free downloaded from https://www.pexels.com/photo/spiral-notebooks-placed-on-white-cloth-with-burning-candle-7150986/ */
+
+/*
+ portfolio images downloaded from 
+ https://www.pexels.com/search/technology/
+
+ Photo by Ketut Subiyanto from Pexels
+ Photo by fauxels from Pexels
+ Photo by Miguel Á. Padriñán from Pexels
+ Photo by Polina Zimmerman from Pexels
+ */
